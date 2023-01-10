@@ -48,7 +48,7 @@ h2 {
     box-shadow: 4px 2px 3px red;
 }
 
-#new-div #new-div-two {
+.box-div {
     padding: 50px 5px;
     display: block;
     font-size: 20px;
@@ -74,4 +74,35 @@ h2 {
     width: 90px;
     height: 40px;
     font-size: 20px;
+}
+
+#new-button:hover {
+    background-color: white;
+    color: black;
+    border: solid 3px black;
+}
+
+#destroyer-div {
+    width: 200px;
+    margin: auto;
+}
+
+#destroyer {
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+    height: 80px;
+    font-size: 20px;
+    filter: blur(3px);
+}
+
+#destroyer:hover {
+    background-color: white;
+    color: red;
+    border: solid 3px red;
+    filter: blur(0px);
 }
