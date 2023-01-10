@@ -4,17 +4,17 @@ document.querySelector("#container").appendChild(h2);
 
 const photoButton = document.getElementById("photo-button");
 function addSection() {
-    const newContainer = document.createElement("div");
-    newContainer.setAttribute("id", "new-container");
     const newDiv = document.createElement("div");
     newDiv.setAttribute("id", "new-div");
     newDiv.innerHTML = "Please, <em>oh please</em>, just <strong>work.</strong>";
-    const newButton = document.createElement("button");
+    const newButtonDiv = document.createElement("div");
+    newButtonDiv.setAttribute("id", "new-button-div");
+    const newButton = document.createAttribute("button");
     newButton.setAttribute("id", "new-button");
     newButton.textContent = "...phew";
-    document.body.appendChild(newContainer);
-    document.newContainer.appendChild(newDiv);
-    document.newContainer.appendChild(newButton);
+    document.body.appendChild(newDiv);
+    document.body.appendChild(newButtonDiv)
+    document.getElementById("new-button-div").appendChild(newButton);
     document.getElementById("photo-button").remove();
 }
 photoButton.addEventListener("click", addSection);
