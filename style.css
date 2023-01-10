@@ -1,0 +1,9 @@
+body {
+    background: skyblue;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    border: solid 6px white;
+}
